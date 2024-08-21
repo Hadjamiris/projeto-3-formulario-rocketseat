@@ -55,7 +55,7 @@ body::before {
 form {
 margin-top: 38px;    
 background: #fafafc;
-border-radius: 8px;
+border-radius: 8px 8px 0 0;
 min-height:300px ;
 
 padding: 64px;
@@ -99,8 +99,7 @@ padding-bottom: 16px;
 .checkbox-wrapper label {
  font-size: 14px;
  line-height: 24px;
-
- color: #4E4958;
+ color: #4e4958;
 
  margin-bottom: 8px;
 }
@@ -215,6 +214,32 @@ footer{
     /*mudou o a direção que o display flex deixou esticado para cima, o direction column esticou para o lado*/ 
     flex-direction: column;
     padding: 40px 64px;
+    margin-bottom: 100px;
+    border-top: 1px solid #d6d6d6;
+    border-radius: 0 0 8px 8px;
 
+    
+}
 
+footer .button{
+ height: 56px;
+ background: #04d361 ;
+ border: 0;
+ border-radius: 8px;
+
+ font-family: 'Archivo';
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 26px;
+
+ color: #FFFFFF ;
+ 
+}
+
+footer .button:hover{
+ background: #08a04c; 
+}
+
+input:invalid{
+    border: 2px solid #ff1010;
 }

@@ -20,15 +20,16 @@
          <p>O primeiro passo é preencher esse
              formulário de inscrição.</p>
      </header>
-     <form>
-
-        <fieldset>
-            <div class="fieldset-wrapper">
+     <form id="my-form">
+          <fieldset>
+              <div class="fieldset-wrapper">
                <legend>Informações do Evento</legend>
  
                 <div class="input-wrapper">
-                   <label for="event-password">Titulo do evento<span>(minimo 8 caracteres)</span></label>
-                    <input type="password" id="event-password"/>
+                   <label for="event-title">Titulo do evento<span>(minimo 8 caracteres)</span></label>
+                    <input
+                     type="text" id="event-title" required
+                     minlength="8"/>
                 </div>
  
               <div class="input-wrapper">
@@ -57,12 +58,10 @@
                </div> 
 
 
-            </div>
-        </fieldset>
+             </div>
+          </fieldset>
 
-
-
-        <fieldset>
+          <fieldset>
             <div class="fieldset-wrapper">
                <legend>Privacidade</legend>
            </div>
@@ -74,7 +73,8 @@
 
          <div class="input-wrapper">
               <label for="event-password">Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span></label>
-               <input type="password" id="event-password"/>
+               <input type="password" id="event-password"
+               minlength="8"/>
          </div>
          
          <div class="checkbox-wrapper">
@@ -84,9 +84,9 @@
          
        
 
-        </fieldset>  
+          </fieldset>  
         
-        <fieldset>
+          <fieldset>
             <div class="fieldset-wrapper">
                <legend>Dia e hora</legend>
            </div >
@@ -108,13 +108,16 @@
               </div>
            </div>
 
-        </fieldset>  
+           </fieldset>  
         
-     </form>
-    
-            <footer class="form-buttons ">
-          <input type="submit" value="Salvar evento">
-            </footer>
+        </form>
+        <footer >
+          <button 
+           class="button";
+           form ="my-form";>
+              Salvar evento
+          </button>
+            
     </div>
 </body>
 </html>
